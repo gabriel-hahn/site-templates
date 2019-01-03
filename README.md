@@ -13,4 +13,4 @@ Site created to a fake company of delivery food, called Omnifood. It's a clean a
 
 ## License
 
-[MIT License](https://github.com/gabriel-hahn/site-templates/blob/master/LICENSE.md)
+[MIT License](https://github.com/gabriel-hahn/site-templates/blob/master/LICENSE)
