@@ -1,10 +1,16 @@
 # Site Templates
 
-Three web sites templates developmented during two courses about HTML, advanced CSS and SASS.
+Four web sites templates developmented during two courses about HTML, advanced CSS and SASS.
 
-## Omnifood Site
+## Omnifood
 
 Site created to a fake company of delivery food, called Omnifood. It's a clean and beautiful project, which shows how to build a Landpage of a business that needs 'catch' their users faster, showing the main goal of company.
+
+## Natours
+
+## Trillo
+
+## Nexter
 
 ## Authors
 
