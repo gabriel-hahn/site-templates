@@ -1,6 +1,6 @@
 # Site Templates
 
-Four web sites templates developmented during two courses about HTML, advanced CSS and SASS.
+Web sites (landpages), developed during a course or freelancer (open projects).
 
 ## Omnifood
 
