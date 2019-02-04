@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     background-color: #fff;
     color: #555;
@@ -68,6 +72,24 @@ section {
     padding: 80px 0;
 }
 
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+textarea {
+    height: 100px;
+}
+
 a:link,
 a:visited {
     color: #e67e22;
@@ -107,7 +129,8 @@ a:active {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -118,7 +141,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited ,
+input[type=submit] {
     background-color: #e67e22;
     color: #fff;
     margin-right: 15px;
@@ -130,7 +154,8 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover {
     background-color: #cf6d17;
 }
 
@@ -408,4 +433,9 @@ cite img {
 
 .plan-price-meal {
     font-size: 80%;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
 }
