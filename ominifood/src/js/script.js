@@ -12,7 +12,7 @@ let btnScrollSignUp = document.getElementById('sign-up');
 
 let lastScrollHeight = 0;
 
-// Verify window scroll and controls if it needs to show sticky bar or not.
+// Verify window scroll and controls if it needs to show sticky bar or not. It controls animations as well.
 window.onscroll = function () {
     const currentScrollHeight = window.scrollY;
     const scrollDown = currentScrollHeight > lastScrollHeight;
@@ -23,6 +23,27 @@ window.onscroll = function () {
     }
     else if (!scrollDown) {
         stickyBar.classList.remove('sticky');
+    }
+
+    /* Animations */
+    if (window.scrollY > (featureSection.offsetTop - 100)) {
+        let wp1El = document.getElementsByClassName('js--wp-1')[0];
+        wp1El.classList.add('animated', 'fadeIn');
+    }
+
+    if (window.scrollY > (stepsSection.offsetTop - 100)) {
+        let wp2El = document.getElementsByClassName('js--wp-2')[0];
+        wp2El.classList.add('animated', 'fadeInUp');
+    }
+
+    if (window.scrollY > (citiesSection.offsetTop - 100)) {
+        let wp3El = document.getElementsByClassName('js--wp-3')[0];
+        wp3El.classList.add('animated', 'fadeIn');
+    }
+
+    if (window.scrollY > (plansSection.offsetTop - 100)) {
+        let wp4El = document.getElementsByClassName('js--wp-4')[0];
+        wp4El.classList.add('animated', 'pulse');
     }
 }
 
