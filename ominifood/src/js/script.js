@@ -9,6 +9,7 @@ let btnScrollFoodDelivery = document.getElementById('food-delivery');
 let btnScrollHowItWorks = document.getElementById('how-it-works');
 let btnScrollCities = document.getElementById('our-cities');
 let btnScrollSignUp = document.getElementById('sign-up');
+let btnNavIcon = document.getElementsByClassName('js--nav-icon')[0];
 
 let lastScrollHeight = 0;
 
@@ -26,26 +27,46 @@ window.onscroll = function () {
     }
 
     /* Animations */
-    if (window.scrollY > (featureSection.offsetTop - 100)) {
+    if (window.scrollY > (featureSection.offsetTop - 120)) {
         let wp1El = document.getElementsByClassName('js--wp-1')[0];
         wp1El.classList.add('animated', 'fadeIn');
     }
 
-    if (window.scrollY > (stepsSection.offsetTop - 100)) {
+    if (window.scrollY > (stepsSection.offsetTop - 120)) {
         let wp2El = document.getElementsByClassName('js--wp-2')[0];
         wp2El.classList.add('animated', 'fadeInUp');
     }
 
-    if (window.scrollY > (citiesSection.offsetTop - 100)) {
+    if (window.scrollY > (citiesSection.offsetTop - 120)) {
         let wp3El = document.getElementsByClassName('js--wp-3')[0];
         wp3El.classList.add('animated', 'fadeIn');
     }
 
-    if (window.scrollY > (plansSection.offsetTop - 100)) {
+    if (window.scrollY > (plansSection.offsetTop - 120)) {
         let wp4El = document.getElementsByClassName('js--wp-4')[0];
         wp4El.classList.add('animated', 'pulse');
     }
 }
+
+btnNavIcon.addEventListener('click', (e) => {
+    let mainNavEl = $('.js--main-nav');
+    let iconElF = document.getElementsByClassName('js--nav-icon')[0];
+    let iconEl = iconElF.children[0];
+
+    mainNavEl.slideToggle(200);
+    if (iconEl.classList.contains('fa-align-justify') && iconEl.classList.contains('fas')) {
+        iconEl.classList.add('far');
+        iconEl.classList.add('fa-times-circle');
+        iconEl.classList.remove('fa-align-justify');
+        iconEl.classList.remove('fas');
+    }
+    else {
+        iconEl.classList.remove('far');
+        iconEl.classList.remove('fa-times-circle');
+        iconEl.classList.add('fa-align-justify');
+        iconEl.classList.add('fas');
+    }
+});
 
 btnScrollPlans.addEventListener('click', function (e) {
     window.scroll({
