@@ -7,7 +7,7 @@ Web sites (landpages), developed during a course or freelancer (open projects).
 Site created to a fake company of delivery food, called Omnifood. It's a clean and beautiful project, which shows how to build a Landpage of a business that needs 'catch' their users faster, showing the main goal of company.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/fGRLAiAXLkJndNraqg/giphy.gif">
+  <img src="https://media.giphy.com/media/TgMx0WBlvfAXcUcu5s/giphy.gif">
 </p>
 
 <p align="center">
