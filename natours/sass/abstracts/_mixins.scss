@@ -15,12 +15,13 @@
 
 // Media Query Manager
 
-/*
-$breakpoint argument choices
+/*$breakpoint argument choices
 - phone - 600px
 - tab-port - 900px
 - tab-land - 1200px
 - big-dektop - 1800px
+
+1em = 16px
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
