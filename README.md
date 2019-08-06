@@ -16,7 +16,15 @@ Site created to a fake company of delivery food, called Omnifood. It's a clean a
 
 ## Natours
 
+<p align="center">
+  <img src="https://media.giphy.com/media/dUMqycQXb3MO0RKCaQ/giphy.gif">
+</p>
+
 Natours is web site of a fake tourism company. This site was developed using SASS and some great visual effects, keep user involve. This is a clean site and with a lot of visual information at the same time.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/YPIso0nbAka7x3CnpF/giphy.gif">
+</p>
 
 ## Trillo
 
