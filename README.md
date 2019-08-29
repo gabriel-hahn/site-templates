@@ -28,9 +28,15 @@ Natours is web site of a fake tourism company. This site was developed using SAS
 
 ## Trillo
 
+<p align="center">
+  <img src="https://media.giphy.com/media/WQ64sOAkUcVO6MHs4x/giphy.gif">
+</p>
+
 Hotel web page showing all the informations about the hotel room in a unique page, describing the room and the comments of the people that booked the room previously.
 
-## Nexter
+<p align="center">
+  <img src="https://media.giphy.com/media/TjusrhZYSt9AfH00Sk/giphy.gif">
+</p>
 
 ## Authors
 
