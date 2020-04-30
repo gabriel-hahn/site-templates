@@ -38,6 +38,18 @@ Hotel web page showing all the informations about the hotel room in a unique pag
   <img src="https://media.giphy.com/media/TjusrhZYSt9AfH00Sk/giphy.gif">
 </p>
 
+## Nexter
+
+<p align="center">
+  <img src="https://media.giphy.com/media/cNwcfASLpuNrV7F21o/giphy.gif">
+</p>
+
+Web page to buy luxury houses, describing the houses and showing pictures of them.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/jowm871Xo6bpxEUXib/giphy.gif">
+</p>
+
 ## Authors
 
 [Gabriel Hahn Schaeffer](https://github.com/gabriel-hahn/) | 
