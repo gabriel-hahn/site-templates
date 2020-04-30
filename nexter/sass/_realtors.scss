@@ -5,7 +5,8 @@
 
     display: grid;
     align-content: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     justify-items: center;
     grid-row-gap: 2rem;
 
@@ -19,16 +20,20 @@
 
     &__list {
         display: grid;
+        grid-template-columns: -webkit-min-content -webkit-max-content;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
         grid-row-gap: 5vh;
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, -webkit-min-content -webkit-max-content);
             grid-template-columns: repeat(3, min-content max-content);
         }
 
         @media only screen and (max-width: $bp-small) {
+            grid-template-columns: -webkit-min-content -webkit-max-content;
             grid-template-columns: min-content max-content;
         }
     }

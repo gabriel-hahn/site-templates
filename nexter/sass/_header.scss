@@ -1,6 +1,7 @@
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-secondary, 0.93)), to(rgba($color-secondary, 0.93))), url(../img/hero.jpeg);
     background-image: linear-gradient(rgba($color-secondary, 0.93), rgba($color-secondary, 0.93)), url(../img/hero.jpeg);
     background-size: cover;
     background-position: center;
@@ -8,10 +9,13 @@
     padding-top: 4rem;
 
     display: grid;
+    grid-template-rows: 1fr -webkit-min-content minmax(6rem, -webkit-min-content) 1fr;
     grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 1.5rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 
     @media only screen and (max-width: $bp-medium) {
         grid-column: 1 / -1;
@@ -33,9 +37,11 @@
 
     &__seenon-text {
         display: grid;
+        grid-template-columns: 1fr -webkit-max-content 1fr;
         grid-template-columns: 1fr max-content 1fr;
         grid-column-gap: 1.5rem;
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
 
         font-size: 1.6rem;
         color: $color-grey-light-2;
@@ -54,12 +60,14 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 3rem;
         justify-items: center;
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
 
         img {
             max-height: 2.5rem;
             max-width: 100%;
-            filter: brightness(70%);
+            -webkit-filter: brightness(70%);
+                    filter: brightness(70%);
         }
     }
 }

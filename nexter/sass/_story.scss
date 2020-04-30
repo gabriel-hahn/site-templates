@@ -2,13 +2,15 @@
     &__pictures {
         background-color: $color-primary;
         grid-column: full-start / col-end 4;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-primary, 0.5)), to(rgba($color-primary, 0.5))), url(../img/back.jpg);
         background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url(../img/back.jpg);
         background-size: cover;
 
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / -1;

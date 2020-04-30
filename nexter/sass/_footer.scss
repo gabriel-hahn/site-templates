@@ -10,7 +10,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
     &__link:link,
     &__link:visited {
@@ -22,13 +23,15 @@
         text-align: center;
         padding: 1.5rem;
         display: block;
+        -webkit-transition: all 0.2s;
         transition: all 0.2s;
     }
 
     &__link:hover,
     &__link:active {
         background-color: rgba(#fff, 0.05);
-        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
     }
 }
 

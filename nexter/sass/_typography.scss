@@ -55,6 +55,7 @@
     text-transform: uppercase;
     padding: 1.8rem 3rem;
     cursor: pointer;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 
     &:hover {

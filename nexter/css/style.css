@@ -20,11 +20,15 @@ body {
 
 .container {
   display: grid;
+  grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .container {
+      grid-template-rows: 6rem 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
       grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
@@ -70,6 +74,7 @@ body {
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s; }
   .btn:hover {
     background-color: #B28451; }
@@ -128,15 +133,19 @@ body {
 .header {
   background-color: #54483A;
   grid-column: full-start / col-end 6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(../img/hero.jpeg);
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
   padding: 8rem;
   padding-top: 4rem;
   display: grid;
+  grid-template-rows: 1fr -webkit-min-content minmax(6rem, -webkit-min-content) 1fr;
   grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
+  -webkit-box-pack: center;
   justify-content: center; }
   @media only screen and (max-width: 50em) {
     .header {
@@ -152,8 +161,10 @@ body {
     justify-self: start; }
   .header__seenon-text {
     display: grid;
+    grid-template-columns: 1fr -webkit-max-content 1fr;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
+    -webkit-box-align: center;
     align-items: center;
     font-size: 1.6rem;
     color: #aaa; }
@@ -167,10 +178,12 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
+    -webkit-box-align: center;
     align-items: center; }
     .header__seenon-logos img {
       max-height: 2.5rem;
       max-width: 100%;
+      -webkit-filter: brightness(70%);
       filter: brightness(70%); }
 
 .realtors {
@@ -179,6 +192,7 @@ body {
   padding: 3rem;
   display: grid;
   align-content: center;
+  -webkit-box-pack: center;
   justify-content: center;
   justify-items: center;
   grid-row-gap: 2rem; }
@@ -189,15 +203,19 @@ body {
     font-size: 1.6rem; }
   .realtors__list {
     display: grid;
+    grid-template-columns: -webkit-min-content -webkit-max-content;
     grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
+    -webkit-box-align: center;
     align-items: center; }
     @media only screen and (max-width: 50em) {
       .realtors__list {
+        grid-template-columns: repeat(3, -webkit-min-content -webkit-max-content);
         grid-template-columns: repeat(3, min-content max-content); } }
     @media only screen and (max-width: 37.5em) {
       .realtors__list {
+        grid-template-columns: -webkit-min-content -webkit-max-content;
         grid-template-columns: min-content max-content; } }
   .realtors__img {
     width: 7rem;
@@ -214,10 +232,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
+  -webkit-box-align: start;
   align-items: start; }
 
 .feature {
   display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
@@ -226,6 +246,7 @@ body {
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
+    -webkit-transform: translateY(-1rem);
     transform: translateY(-1rem); }
   .feature__text {
     font-size: 1.7rem; }
@@ -233,11 +254,13 @@ body {
 .story__pictures {
   background-color: #c69963;
   grid-column: full-start / col-end 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 153, 99, 0.5)), to(rgba(198, 153, 99, 0.5))), url(../img/back.jpg);
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  -webkit-box-align: center;
   align-items: center; }
   @media only screen and (max-width: 50em) {
     .story__pictures {
@@ -322,6 +345,7 @@ body {
     background-color: #101d2c;
     color: #fff;
     font-weight: 400;
+    -webkit-transform: translateY(50%);
     transform: translateY(50%); }
   .home__btn {
     grid-column: 1 / -1; }
@@ -330,7 +354,9 @@ body {
   .home__location, .home__rooms, .home__area, .home__price {
     font-size: 1.5rem;
     margin-left: 2rem;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
     align-items: center; }
     .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
       fill: #c69963;
@@ -391,6 +417,7 @@ body {
   .gallery__img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover; }
 
 .footer {
@@ -403,6 +430,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
+  -webkit-box-align: center;
   align-items: center; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
@@ -413,9 +441,11 @@ body {
     text-align: center;
     padding: 1.5rem;
     display: block;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s; }
   .nav__link:hover, .nav__link:active {
     background-color: rgba(255, 255, 255, 0.05);
+    -webkit-transform: translateY(-3px);
     transform: translateY(-3px); }
 
 .copyright {
